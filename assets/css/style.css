@@ -1,0 +1,296 @@
+.header {
+  right:  5%;
+  top: 20%;
+  width: 100%;
+  height: 100%;
+  border-style: solid;
+  border-width: 1px;
+  display: flex;
+  align-items:center;
+}
+
+.main-img-cont{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  width: 10rem;
+}
+
+.logo {
+  margin: 0.5rem;
+  width: 5rem;
+  height: 3rem;
+}
+
+.main-menu {
+	width: 100%;
+  display: flex;
+  align-items:  center;
+  justify-content:  flex-end;
+  margin-right: 1rem; 
+}
+
+.main-menu-item {
+  margin-left: 1rem;
+  font-family: "roboto slab", serif;
+  font-size: 1rem;
+}
+
+.back:link, .back:visited {
+  background-color: #778899;
+  color: white;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  text-align: center; 
+  text-decoration: none;
+  display: flex;
+  font-family: "roboto slab", serif;
+  font-size: 1rem;
+}
+
+/* index.html */
+
+.index-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column;
+  margin-top: 2rem;
+  width: 100%;
+  height: 100%;
+}
+
+.img-index{
+  width: 100%;
+  height:100%;
+}
+
+.para-index{
+  padding-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-family: "quicksand", sans-serif;
+  font-size: 1.3rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.category-menu {
+  margin-top: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  margin: 0.5rem;
+}
+
+.category-menu-item {
+  background-color: silver;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+  height: 10rem;
+}
+
+.category-menu-item-image {
+  width: 10rem;
+  height: 10rem;
+}
+
+.category-menu-item-text {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 0.5rem;
+  width: 15rem;
+  height: 15rem;
+}
+
+.category-menu-item-text-title{
+  padding-bottom: 0.5rem;
+  font-family: "roboto slab", serif;
+  font-size: 1rem;
+}
+
+.texto{
+  font-family: "quicksand", sans-serif;
+  font-size:1rem;
+}
+
+/*categoria*/
+
+.section{
+  width: 100%;
+  height: 100%;
+  background-color: #EEEED1;
+  display: flex;
+  flex-direction: column;
+  grid-template-rows: 12.5% 12.5% 12.5% 12.5% 25% 25%;
+  grid-template-columns: 25% 25% 25% 25% ;
+  grid-row-gap: 5rem;
+  grid-column-gap: 15rem;
+
+}
+.eletronica{
+  font-family: "roboto slab", serif;
+  font-size: 2.2rem;
+  background-color: #CDC8B1;
+  font-size: 1.5rem;
+  justify-items: center;
+  display: inline-grid;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  width: 100%;
+  height: 100%;
+}
+
+.em{
+  display: flex;
+}
+
+.pwm{
+  display: flex;
+}
+.chamada_eletronica{
+  font-family: "quicksand", sans-serif;
+  font-size:1.2rem;
+  background-color: #CDCDC1;
+  justify-items: center;
+  display: grid;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: span-2;
+  grid-row-end: 3;
+}
+
+.projetos_eletronica{
+  font-family: "roboto slab", serif;
+  font-size: 1.3rem;
+  background-color: #E0EEE0;
+  display:flex;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+.img_em{
+  background-color: gold;
+  display: flex;
+  justify-items: start;
+  
+}
+.txt_em {
+  font-family: "quicksand", sans-serif;
+  font-size:1rem;
+  background-color: gold;
+  display: flex;
+  align-self: center;
+}
+.img_pwm{
+  background-color: gold;
+  display: grid;
+  align-self: flex-end;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+.txt_pwm {
+  font-family: "quicksand", sans-serif;
+  font-size:1rem;
+  background-color: gold;
+  align-self: center;
+}
+
+/* projeto.html */
+
+.projeto-main{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.projeto-title {
+  background-color: #778899;
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-top: 6rem;
+  width: 100%;
+  font-weight: bold;
+  font-family: "roboto slab", serif;
+  font-size:2.5rem;
+}
+
+.projeto-image-cont{
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+  width: 100%;
+}
+
+.projeto-image {
+  width: 30rem;
+  height: 25rem;
+}
+
+.projeto-texto{
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-rows: 8rem 5rem 7rem 5rem;
+  grid-template-columns: 1fr 2fr 3fr 4fr;
+  font-family: "quicksand", sans-serif;
+  font-size:1.1rem;
+
+}
+
+.subtitulo{
+  font-family: "quicksand", sans-serif;
+  font-size:1.1rem;
+  font-weight: bold;
+
+
+}
+.descricao {
+  padding: 2rem;
+  width: 30rem;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.equipe {
+  padding: 2rem;
+  width: 30rem;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.ferramentas {
+  padding: 2rem;
+  width: 30rem;
+  grid-row-start: 3;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.laboratorio {
+  padding: 2rem;
+  width: 30rem;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
