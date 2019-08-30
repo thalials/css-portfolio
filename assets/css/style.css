@@ -176,7 +176,6 @@
   font-family: "roboto slab", serif;
   font-size: 1.3rem;
   background-color: #E0EEE0;
-  display:flex;
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 3;
@@ -197,7 +196,6 @@
 }
 .img_pwm{
   background-color: gold;
-  display: grid;
   align-self: flex-end;
   grid-column-start: 1;
   grid-column-end: 2;
