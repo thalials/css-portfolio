@@ -126,22 +126,19 @@
 
 /*categoria*/
 
-.section{
+.tudo{
   width: 100%;
-  height: 100%;
-  background-color: #EEEED1;
-  display: flex;
   flex-direction: column;
   grid-template-rows: 12.5% 12.5% 12.5% 12.5% 25% 25%;
   grid-template-columns: 25% 25% 25% 25% ;
   grid-row-gap: 5rem;
   grid-column-gap: 15rem;
-
+  background-color: #F6F6F6;
 }
 .eletronica{
   font-family: "roboto slab", serif;
   font-size: 2.2rem;
-  background-color: #CDC8B1;
+  background-color: #353333;
   font-size: 1.5rem;
   justify-items: center;
   display: inline-grid;
@@ -151,6 +148,11 @@
   grid-row-end: 3;
   width: 100%;
   height: 100%;
+  color: #F6F6F6;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #5589B5;
+  border-top: none;
 }
 
 .em{
@@ -163,36 +165,47 @@
 .chamada_eletronica{
   font-family: "quicksand", sans-serif;
   font-size:1.2rem;
-  background-color: #CDCDC1;
   justify-items: center;
   display: grid;
   grid-column-start: 2;
   grid-column-end: 4;
   grid-row-start: span-2;
   grid-row-end: 3;
+  background-color: #F6F6F6;
+  color: #353333;
 }
 
 .projetos_eletronica{
+  padding-left: 0.5rem;
   font-family: "roboto slab", serif;
   font-size: 1.3rem;
-  background-color: #E0EEE0;
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 3;
   grid-row-end: 4;
+  background-color: #F6F6F6;
+  color: #353333;
 }
 .img_em{
   background-color: gold;
   display: flex;
   justify-items: start;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #081326;
   
 }
 .txt_em {
   font-family: "quicksand", sans-serif;
   font-size:1rem;
+  font-weight: bold;
+  text-decoration: none;
   background-color: gold;
   display: flex;
   align-self: center;
+  background-color: #F6F6F6;
+  color: #353333;
+  padding-left: 0.5rem;
 }
 .img_pwm{
   background-color: gold;
@@ -201,12 +214,21 @@
   grid-column-end: 2;
   grid-row-start: 5;
   grid-row-end: 6;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #353333;
+  border-top: none;
 }
 .txt_pwm {
   font-family: "quicksand", sans-serif;
   font-size:1rem;
+  text-decoration: none;
+  font-weight: bold;
   background-color: gold;
   align-self: center;
+  background-color: #F6F6F6;
+  color: #353333;
+  padding-left: 0.5rem;
 }
 
 /* projeto.html */
