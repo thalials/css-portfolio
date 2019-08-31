@@ -137,8 +137,8 @@
 }
 .eletronica{
   font-family: "roboto slab", serif;
-  font-size: 2.2rem;
-  background-color: #353333;
+  font-size: 2.4rem;
+  background-color: #F6F6F6;
   font-size: 1.5rem;
   justify-items: center;
   display: inline-grid;
@@ -148,10 +148,10 @@
   grid-row-end: 3;
   width: 100%;
   height: 100%;
-  color: #F6F6F6;
+  color: #314366;
   border-style: solid;
-  border-width: 1px;
-  border-color: #5589B5;
+  border-width: 2px;
+  border-color: #081326;
   border-top: none;
 }
 
@@ -167,6 +167,8 @@
   font-size:1.2rem;
   justify-items: center;
   display: grid;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   grid-column-start: 2;
   grid-column-end: 4;
   grid-row-start: span-2;
@@ -185,9 +187,9 @@
   grid-row-end: 4;
   background-color: #F6F6F6;
   color: #353333;
+  padding-bottom: 0.5rem;
 }
 .img_em{
-  background-color: gold;
   display: flex;
   justify-items: start;
   border-style: solid;
@@ -200,7 +202,6 @@
   font-size:1rem;
   font-weight: bold;
   text-decoration: none;
-  background-color: gold;
   display: flex;
   align-self: center;
   background-color: #F6F6F6;
@@ -208,7 +209,6 @@
   padding-left: 0.5rem;
 }
 .img_pwm{
-  background-color: gold;
   align-self: flex-end;
   grid-column-start: 1;
   grid-column-end: 2;
@@ -224,7 +224,6 @@
   font-size:1rem;
   text-decoration: none;
   font-weight: bold;
-  background-color: gold;
   align-self: center;
   background-color: #F6F6F6;
   color: #353333;
