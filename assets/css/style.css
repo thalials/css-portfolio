@@ -235,10 +235,11 @@
 .projeto-main{
   display: flex;
   flex-wrap: wrap;
+  background-color: #F6F6F6;
+
 }
 
 .projeto-title {
-  background-color: #778899;
   color: white;
   display: flex;
   justify-content: center;
@@ -247,6 +248,7 @@
   font-weight: bold;
   font-family: "roboto slab", serif;
   font-size:2.5rem;
+  color: #314366;
 }
 
 .projeto-image-cont{
@@ -268,6 +270,7 @@
   grid-template-columns: 1fr 2fr 3fr 4fr;
   font-family: "quicksand", sans-serif;
   font-size:1.1rem;
+  color: #353333;
 
 }
 
@@ -275,6 +278,7 @@
   font-family: "quicksand", sans-serif;
   font-size:1.1rem;
   font-weight: bold;
+  color: #5589B5;
 
 
 }
