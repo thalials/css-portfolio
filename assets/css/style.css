@@ -7,6 +7,7 @@
   border-width: 1px;
   display: flex;
   align-items:center;
+  background-color: #314366;
 }
 
 .main-img-cont{
@@ -23,7 +24,7 @@
 }
 
 .main-menu {
-	width: 100%;
+  width: 100%;
   display: flex;
   align-items:  center;
   justify-content:  flex-end;
@@ -34,11 +35,14 @@
   margin-left: 1rem;
   font-family: "roboto slab", serif;
   font-size: 1rem;
+
 }
 
 .back:link, .back:visited {
-  background-color: #778899;
-  color: white;
+  text-decoration: none;
+  border-radius: 0.7rem;
+  color: #314366;
+  background-color: #f6f6f6;
   padding: 0.5rem;
   margin: 0.5rem;
   text-align: center; 
@@ -47,6 +51,8 @@
   font-family: "roboto slab", serif;
   font-size: 1rem;
 }
+
+
 
 /* index.html */
 
@@ -58,11 +64,16 @@
   margin-top: 2rem;
   width: 100%;
   height: 100%;
+  background: #f6f6f6;
 }
 
+.foto{
+  border-radius: 1rem;
+}
 .img-index{
   width: 100%;
   height:100%;
+  background-color: #f6f6f6;
 }
 
 .para-index{
@@ -74,6 +85,7 @@
   font-size: 1.3rem;
   text-align: center;
   font-weight: bold;
+  color: #353333;
 }
 
 .category-menu {
@@ -84,10 +96,12 @@
   align-items: flex-end;
   flex-wrap: wrap;
   margin: 0.5rem;
+  background-color: #f6f6f6;
+
 }
 
 .category-menu-item {
-  background-color: silver;
+  background-color: #f6f6f6;
   margin-top: 2rem;
   margin-left: 2rem;
   padding-right: 1rem;
@@ -117,11 +131,12 @@
   padding-bottom: 0.5rem;
   font-family: "roboto slab", serif;
   font-size: 1rem;
-}
 
 .texto{
   font-family: "quicksand", sans-serif;
   font-size:1rem;
+  color: #353333;
+
 }
 
 /*categoria*/
