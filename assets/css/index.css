@@ -1,0 +1,79 @@
+/* index.html */
+
+.index-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column;
+  width: 100%;
+  height: 100%;
+  background: #f6f6f6;
+  margin-top: 0.5rem;
+}
+
+.img-index{
+  width: 100%;
+  height:100%;
+}
+
+.para-index{
+  padding-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-family: "quicksand", sans-serif;
+  font-size: 1.3rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.category-menu {
+  margin-top: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  margin: 0.5rem;
+  background-color: #f6f6f6;
+}
+
+.category-menu-item {
+  background-color: #f6f6f6;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+  height: 10rem;
+}
+
+.category-menu-item-image {
+  width: 10rem;
+  height: 10rem;
+}
+
+.category-menu-item-text {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 0.5rem;
+  width: 15rem;
+  height: 15rem;
+
+}
+
+.category-menu-item-text-title{
+  padding-bottom: 0.5rem;
+  font-family: "roboto slab", serif;
+  font-size: 1rem;
+}
+
+.texto{
+  font-family: "quicksand", sans-serif;
+  font-size:1rem;
+  color: #353333;
+}
