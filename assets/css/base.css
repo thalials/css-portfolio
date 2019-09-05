@@ -64,6 +64,7 @@
   padding: 4rem 0;
   max-width: 66rem;
   margin: 0 auto;
+  background-color: #f6f6f6;
 }
 
 @media (max-width: 68rem) {
