@@ -1,5 +1,21 @@
 /* index.html */
 
+.call{
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+}
+
+.call-figure{
+  width:33%;
+}
+
+.call-img{
+  width: 100%;
+  border-radius: 5%;
+  border-bottom-right-radius: 30%;  
+}
+
 .index-title {
   display: flex;
   justify-content: center;
