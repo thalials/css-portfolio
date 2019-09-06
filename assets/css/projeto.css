@@ -1,98 +1,84 @@
 /* projeto.html */
 
 .projeto-main{
-  display: flex;
-  background-color: #F6F6F6;
-  flex-wrap: wrap;
-  justify-content: center;
+	display: flex;
+	background-color: #F6F6F6;
+	flex-wrap: wrap;
+	justify-content: center;
 
 }
 
-.projeto-image-cont{
-  display: flex;
-  justify-content: center;
-  margin-top: 4rem;
-  width: 100%;
-  flex-wrap: wrap;
-
+.cover {
+	display: flex;
+	justify-content: center;
+	margin-top: 4rem;
+	width: 100%;
 }
 
-.projeto-image {
-
+.cover-image {
 }
 
 
 .projeto-texto{
-  font-family: "quicksand", sans-serif;
-  font-size:1.1rem;
-  color: #353333;
-  margin-left: 2rem;
-  flex-wrap: wrap;
-  justify-content: center;
+	font-family: "quicksand", sans-serif;
+	font-size:1.1rem;
+	color: #353333;
+	margin-left: 2rem;
+	flex-wrap: wrap;
+	justify-content: center;
 
 }
 
 .projeto-title {
-  font-weight: bold;
-  font-family: "roboto slab", serif;
-  font-size:2.5rem;
-  color: #314366;
-  flex-wrap: wrap;
-  justify-content: center;
+	font-weight: bold;
+	font-family: "roboto slab", serif;
+	font-size:2.5rem;
+	color: #314366;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 
 .subtitulo{
-  font-family: "quicksand", sans-serif;
-  font-size:1.1rem;
-  font-weight: bold;
-  color: #5589B5;
+	font-family: "quicksand", sans-serif;
+	font-size:1.1rem;
+	font-weight: bold;
+	color: #5589B5;
 }
 
 .descricao {
-  margin-top: 1rem;
-  margin-left: 0.5rem;
+	margin-top: 1rem;
+	margin-left: 0.5rem;
 }
 
 .equipe {
-  margin-top: 1rem;
-  margin-left: 0.5rem;
+	margin-top: 1rem;
+	margin-left: 0.5rem;
 }
 
 .ferramentas {
-  margin-top: 1rem;
-  margin-left: 0.5rem;
+	margin-top: 1rem;
+	margin-left: 0.5rem;
 }
 
 .laboratorio {
-  margin-top: 1rem;
-  margin-left: 0.5rem;
+	margin-top: 1rem;
+	margin-left: 0.5rem;
 }
 
 @media (max-width: 68rem) {
-  .projeto-main {
-    flex-direction: column;
-    align-items: center;
-  }
+	.projeto-main {
+		flex-direction: column;
+		align-items: center;
+	}
 
-  .projeto-texto{
-    margin-top: 1rem;
-    margin-left: 0;
-  }
-.cover {
-  display: flex;
-  justify-content: center;
-  margin-top: 4rem;
-  width: 100%;
-}
+	.projeto-texto{
+		margin-top: 1rem;
+		margin-left: 0;
+	}
+	
 
-.cover-image {
-  width: 30rem;
-  height: 25rem;
-}
-
-
-  .projeto-title {
-    text-align: center;
-  }
+	.projeto-title {
+		text-align: center;
+	}
 }
