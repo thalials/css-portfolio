@@ -1,84 +1,84 @@
 /* projeto.html */
 
 .projeto-main{
-  display: flex;
-  flex-wrap: wrap;
-  background-color: #F6F6F6;
+	display: flex;
+	background-color: #F6F6F6;
+	flex-wrap: wrap;
+	justify-content: center;
+
+}
+
+.cover {
+	display: flex;
+	justify-content: center;
+	margin-top: 4rem;
+	width: 100%;
+}
+
+.cover-image {
+}
+
+
+.projeto-texto{
+	font-family: "quicksand", sans-serif;
+	font-size:1.1rem;
+	color: #353333;
+	margin-left: 2rem;
+	flex-wrap: wrap;
+	justify-content: center;
+
 }
 
 .projeto-title {
-  color: white;
-  display: flex;
-  justify-content: center;
-  margin-top: 6rem;
-  width: 100%;
-  font-weight: bold;
-  font-family: "roboto slab", serif;
-  font-size:2.5rem;
-  color: #314366;
+	font-weight: bold;
+	font-family: "roboto slab", serif;
+	font-size:2.5rem;
+	color: #314366;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
-.projeto-image-cont{
-  display: flex;
-  justify-content: center;
-  margin-top: 4rem;
-  width: 100%;
-}
-
-.projeto-image {
-  width: 30rem;
-  height: 25rem;
-}
-
-.projeto-texto{
-  display: grid;
-  grid-gap: 1rem;
-  grid-template-rows: 8rem 5rem 7rem 5rem;
-  grid-template-columns: 1fr 2fr 3fr 4fr;
-  font-family: "quicksand", sans-serif;
-  font-size:1.1rem;
-  color: #353333;
-}
 
 .subtitulo{
-  font-family: "quicksand", sans-serif;
-  font-size:1.1rem;
-  font-weight: bold;
-  color: #5589B5;
+	font-family: "quicksand", sans-serif;
+	font-size:1.1rem;
+	font-weight: bold;
+	color: #5589B5;
 }
 
 .descricao {
-  padding: 2rem;
-  width: 30rem;
-  grid-row-start: 1;
-  grid-row-end: 2;
-  grid-column-start: 2;
-  grid-column-end: 3;
+	margin-top: 1rem;
+	margin-left: 0.5rem;
 }
 
 .equipe {
-  padding: 2rem;
-  width: 30rem;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  grid-column-start: 2;
-  grid-column-end: 3;
+	margin-top: 1rem;
+	margin-left: 0.5rem;
 }
 
 .ferramentas {
-  padding: 2rem;
-  width: 30rem;
-  grid-row-start: 3;
-  grid-row-end: 3;
-  grid-column-start: 2;
-  grid-column-end: 3;
+	margin-top: 1rem;
+	margin-left: 0.5rem;
 }
 
 .laboratorio {
-  padding: 2rem;
-  width: 30rem;
-  grid-row-start: 4;
-  grid-row-end: 5;
-  grid-column-start: 2;
-  grid-column-end: 3;
+	margin-top: 1rem;
+	margin-left: 0.5rem;
+}
+
+@media (max-width: 68rem) {
+	.projeto-main {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.projeto-texto{
+		margin-top: 1rem;
+		margin-left: 0;
+	}
+	
+
+	.projeto-title {
+		text-align: center;
+	}
 }

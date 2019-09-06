@@ -2,99 +2,123 @@
 <html lang="pt-br">
 
 <head>
-	<title>Projetos de Engenharia</title>
+  <title>Projetos de Engenharia</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
   <link href="assets/css/reset.css" rel="stylesheet">
-  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/base.css" rel="stylesheet">
+  <link href="assets/css/index.css" rel="stylesheet">
   <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 
-<body>
+<body class="body">
 	<header class="header">
-    <div class = "main-img-cont">
-      <a href="index.html">
-        <img class="logo" src="assets/img/logo.png" alt="logo">
-      </a>
-    </div>		
-    <ul class= "main-menu">
-     <li class='main-menu-item'><a class='back' href="categoria.html">Prototipagem</a></li>
-     <li class='main-menu-item'><a class='back' href="categoria.html">Programação</a></li>
-     <li class='main-menu-item'><a class='back' href="categoria.html">Modelagem</a></li>
-     <li class='main-menu-item'><a class='back' href="categoria.html">Matemática</a></li>
-     <li class='main-menu-item'><a class='back' href="categoria.html">Eletrônica</a></li>
-   </ul>
- </header>
+    <figure class = "logo">
+      <a href="index.html"><img class="logo-img" src="assets/img/logo.png" alt="logo"></a>
+    </figure>
 
- <main>
-  <div class="index-title">
-   <img src= "assets/img/fisrt.jpg" width="320" height="205"  alt= "Portfolio de projetos">
-   <p class="para-index">
-    Venha conhecer os projetos de Engenharia feitos pela Isadora!  
-  </p>
-</div>
+    <nav class="menu">
+      <h1 class="menu-title">
+        Projetos de Engenharia
+      </h1>
 
-<ul class="category-menu">
- <li class="category-menu-item">
-  <img class="category-menu-item-image" src="assets/img/prototipo.jpeg" alt="Prototipagem">
-  <div class="category-menu-item-text">
-   <p>
-    <a class='back' href="categoria.html">Prototipagem</a>
-  </p>
-  <p class = "texto">
-    Nesta seção você encontrará todos os projetos de prototipagem.
-  </p>
-</div>
-</li>
+      <figure class="menu-figure">
+        <a href="#"><img class="menu-img" src="assets/img/menu.png" alt="Abrir menu"></a>
+      </figure>
 
-<li class="category-menu-item">
-  <img class="category-menu-item-image" src="assets/img/prog.jpeg" alt="programacao">
-  <div class="category-menu-item-text">
-   <p>
-    <a class='back' href="categoria.html">Programação</a>
-  </p>
-  <p class = "texto">
-    Nesta seção você encontrará todos os projetos de programação.
-  </p>
-</div>
-</li>
+      <ul class= "menu-list">
+        <li class='main-menu-item'><a class='back' href="categoria.html">Prototipagem</a></li>
+        <li class='main-menu-item'><a class='back' href="categoria.html">Programação</a></li>
+        <li class='main-menu-item'><a class='back' href="categoria.html">Modelagem</a></li>
+        <li class='main-menu-item'><a class='back' href="categoria.html">Matemática</a></li>
+        <li class='main-menu-item'><a class='back' href="categoria.html">Eletrônica</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<li class="category-menu-item">
-  <img class="category-menu-item-image" src="assets/img/mod.jpg" alt="modelagem">
-  <div class="category-menu-item-text">
-   <p>
-    <a class='back' href="categoria.html">Modelagem</a>
-  </p>
-  <p class = "texto">
-    Nesta seção você encontrará todos os projetos de modelagem.
-  </p>
-</div>
-</li>
+  <main class="main">
+    <div class="call">
+      <figure class="call-figure">
+        <img class="call-img" src= "assets/img/fisrt.jpg" alt= "Portfolio de projetos">
+      </figure>
 
-<li class="category-menu-item">
-  <img class="category-menu-item-image" src="assets/img/mat.jpg" alt="matematica">
-  <div class="category-menu-item-text">
-   <p>
-    <a class='back' href="categoria.html">Matemática</a>
-  </p>
-  <p class = "texto">
-    Nesta seção você encontrará todos os projetos de matemática.
-  </p>
-</div>
-</li>
+      <p class="call-text">
+        Venha conhecer os projetos de Engenharia feitos pela Isadora!  
+      </p>
+    </div>
 
-<li class="category-menu-item">
-  <img class="category-menu-item-image" src="assets/img/elet.jpg" alt="eletronica">
-  <div class="category-menu-item-text">
-   <p>
-    <a class='back' href="categoria.html">Eletrônica</a>
-  </p>
-  <p class = "texto">
-    Nesta seção você encontrará todos os projetos de eletrônica.
-  </p>
-</div>
-</li>
-</ul>
-</main>
+    <ul class="category-list">
+      <li class="category-item">
+        <figure class="category-cover">
+          <img class="category-image" src="assets/img/prototipo.jpeg" alt="Prototipagem">
+        </figure>
+        <div class="category-description">
+          <h2 class="category-title">
+            <a class='category-link' href="categoria.html">Prototipagem</a>
+          </h2>
+          <p class = "category-body">
+            Nesta seção você encontrará todos os projetos de Prototipagem.
+          </p>
+        </div>
+      </li>
+
+      <li class="category-item">
+        <figure class="category-cover">
+          <img class="category-image" src="assets/img/prog.jpeg" alt="programacao">
+        </figure>
+        <div class="category-description">
+          <h2 class="category-title">
+            <a class='category-link' href="categoria.html">Programação</a>
+          </h2>
+          <p class = "category-body">
+            Nesta seção você encontrará todos os projetos de Programação.
+          </p>
+        </div>
+      </li>
+
+      <li class="category-item">
+        <figure class="category-cover">
+          <img class="category-image" src="assets/img/mod.jpg" alt="modelagem">
+        </figure>
+        <div class="category-description">
+          <h2 class="category-title">
+            <a class='category-link' href="categoria.html">Modelagem</a>
+          </h2>
+          <p class = "category-body">
+            Nesta seção você encontrará todos os projetos de Modelagem.
+          </p>
+        </div>
+      </li>
+
+      <li class="category-item">
+        <figure class="category-cover">
+          <img class="category-image" src="assets/img/mat.jpg" alt="matematica">
+        </figure>
+        <div class="category-description">
+          <h2 class="category-title">
+            <a class='category-link' href="categoria.html">Matemática</a>
+          </h2>
+          <p class = "category-body">
+            Nesta seção você encontrará todos os projetos de Matemática.
+          </p>
+        </div>
+      </li>
+
+      <li class="category-item">
+        <figure class="category-cover">
+          <img class="category-image" src="assets/img/elet.jpg" alt="eletronica">
+        </figure>
+        <div class="category-description">
+          <h2 class="category-title">
+            <a class='category-link' href="categoria.html">Eletrônica</a>
+          </h2>
+          <p class = "category-body">
+            Nesta seção você encontrará todos os projetos de Eletrônica.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </main>
 </body>
 </html>
