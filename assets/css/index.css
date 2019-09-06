@@ -22,10 +22,11 @@
   margin-top: 1rem;
   text-align: center;
   font-size: 1.3rem;
+  color: #353333;
   font-family: "roboto slab", serif;
 }
 
-.category-list{
+.category-list {
   margin-top: 4rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
