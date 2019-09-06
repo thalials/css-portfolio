@@ -1,12 +1,10 @@
 /*categoria*/
 
 .tudo{
+  max-width: 80rem;
+  margin: 0 auto;
   width: 100%;
   flex-direction: column;
-  grid-template-rows: 12.5% 12.5% 12.5% 12.5% 25% 25%;
-  grid-template-columns: 25% 25% 25% 25% ;
-  grid-row-gap: 5rem;
-  grid-column-gap: 15rem;
   background-color: #F6F6F6;
 }
 .eletronica{
@@ -81,18 +79,23 @@
   background-color: #F6F6F6;
   color: #353333;
   padding-left: 0.5rem;
+  padding: 0.5rem;
+  transition: background-color .25s, color .25s;
 }
+
+.txt_em:hover{
+  background-color: #353333;
+  color: #F6F6F6;
+}
+
 .img_pwm{
   align-self: flex-end;
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 5;
-  grid-row-end: 6;
   border-style: solid;
   border-width: 1px;
   border-color: #353333;
   border-top: none;
 }
+
 .txt_pwm {
   font-family: "quicksand", sans-serif;
   font-size:1rem;
@@ -102,4 +105,62 @@
   background-color: #F6F6F6;
   color: #353333;
   padding-left: 0.5rem;
+  padding: 0.5rem;
+  transition: background-color .25s, color .25s;
+}
+
+.txt_pwm:hover{
+  background-color: #353333;
+  color: #F6F6F6;
+}
+
+@media (max-width: 68rem) {
+  .txt_em {
+    padding-left: 0.3rem;
+    padding: 0.3rem;
+  }
+  .img_em {
+    align-self: flex-start;
+  }
+  .txt_pwm {
+    padding-left: 0.3rem;
+    padding: 0.3rem;
+  }
+  .img_pwm {
+    align-self: flex-start;
+  }
+  .tudo{
+    width: 100%;
+    background-color: #F6F6F6;
+  }
+}
+
+@media (max-width: 40rem) {
+  .em{
+    display: flex;
+    flex-direction: column;
+  }
+  .pwm{
+    display: flex;
+    flex-direction: column;
+  }
+  .txt_em {
+    font-weight: bold;
+  }
+  .txt_pwm{
+    font-weight: bold;
+  }
+
+  .img_em{
+    max-width: 100%;
+  }
+  .img_pwm{
+    max-width: 100%;
+    border-top: solid;
+    border-width: 1px;
+  }
+  .tudo{
+    width: 100%;
+    max-width: 100%;
+  }
 }

@@ -5,49 +5,61 @@
   <title>Eletrônica</title>
   <link href="assets/css/style.css" rel="stylesheet">
   <link href="assets/css/reset.css" rel="stylesheet">
+  <link href="assets/css/base.css" rel="stylesheet">
+  <link href="assets/css/categoria.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
   <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 
 <body>
   <header class="header">
-    <div class = "main-img-cont">
-      <a href="index.html">
-        <img class="logo" src="assets/img/logo.png" alt="logo">
-      </a>
-    </div>    
-    <ul class= "main-menu">
-      <li class='main-menu-item'><a class = 'back' href="categoria.html">Prototipagem</a></li>
-      <li class='main-menu-item'><a class = 'back'  href="categoria.html">Programação</a></li>
-      <li class='main-menu-item'><a class = 'back'  href="categoria.html">Modelagem</a></li>
-      <li class='main-menu-item'><a class = 'back'  href="categoria.html">Matemática</a></li>
-      <li class='main-menu-item'><a class = 'back'  href="categoria.html">Eletrônica</a></li>
-    </ul>
-  </header>
+    <figure class = "logo">
+      <a href="index.html"><img class="logo-img" src="assets/img/logo.png" alt="logo"></a>
+    </figure>
 
-  <main class="tudo">
-    <h1 class="eletronica" rel="stylesheet">
-      Eletrônica
-    </h1>
-    <h3 class="chamada_eletronica">
-      Aqui você encontrará projetos de eletrônica!
-    </h3>
+    <nav class="menu">
+      <h2 class="menu-title">
+        Projetos de Engenharia
+      </h2>
 
-    <h3 class="projetos_eletronica">
-      Projetos:
-    </h3>
+      <figure class="menu-figure">
+        <a href="#"><img class="menu-img" src="assets/img/menu.png" alt="Abrir menu"></a>
+      </figure>
 
-    <ol class="projetos">
-     <li class="em">
-       <img class="img_em" src="assets/img/prototipo.jpeg" width="320" height="205" alt="Estação meteorológica">
-       <a class="txt_em" href="projeto.html">Estação Meteorológica</a>
-     </li>
-     <li class="pwm">
-       <img class="img_pwm" src="assets/img/rotmotor.jpeg" width="320" height="205" alt="Rotação de motor">
-       <a class="txt_pwm" href="projeto.html">PWM para controle de motores</a>
-     </li>
-   </ol>
- </main>
-</body>
-</html>
+      <ul class= "menu-list">
+        <li class='main-menu-item'><a class='back' href="categoria.html">Prototipagem</a></li>
+        <li class='main-menu-item'><a class='back' href="categoria.html">Programação</a></li>
+        <li class='main-menu-item'><a class='back' href="categoria.html">Modelagem</a></li>
+        <li class='main-menu-item'><a class='back' href="categoria.html">Matemática</a></li>
+        <li class='main-menu-item'><a class='back' href="categoria.html">Eletrônica</a></li>
+      </ul>
+    </nav>
+    </header>
+
+    <main class="tudo">
+      <h1 class="eletronica" rel="stylesheet">
+        Eletrônica
+      </h1>
+      <h3 class="chamada_eletronica">
+        Aqui você encontrará projetos de eletrônica!
+      </h3>
+
+      <h3 class="projetos_eletronica">
+        Projetos:
+      </h3>
+
+      <ol class="projetos">
+       <li class="em">
+         <img class="img_em" src="assets/img/prototipo.jpeg" width="320" height="205" alt="Estação meteorológica">
+         <a class="txt_em" href="projeto.html">Estação Meteorológica</a>
+       </li>
+       <li class="pwm">
+         <img class="img_pwm" src="assets/img/rotmotor.jpeg" width="320" height="205" alt="Rotação de motor">
+         <a class="txt_pwm" href="projeto.html">PWM para controle de motores</a>
+       </li>
+     </ol>
+   </main>
+ </body>
+ </html>
