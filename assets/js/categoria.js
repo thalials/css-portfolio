@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
 
 	let params = coDesExtract()
- let value = params['key']
+    let value = params['key']
 
- let db = coDesConnect('https://codesigndeaplicativos.firebaseio.com/')
+    let db = coDesConnect('https://grupo-7-66c34.firebaseio.com/')
 
- db.download('/biblioteca/elect/livros/analcir', function(data) {
+   db.download('/', function(data) {
 
     for(let key in data) {
 
@@ -14,17 +14,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
       db.download('/', function(data) {
 
-        context = data['biblioteca'][value]
+        context = data['portifolio'][value]
         coDesReplace('title', context)
 
         context = data
         coDesReplace('.menu-list', context)
 
-        context = data['biblioteca'][value]
-        coDesReplace('.call', context)
+        context = data['portifolio'][value]
+        coDesReplace('.projetos', context)
 
-        context = data['biblioteca'][value]
-        coDesReplace('.book-list', context)
+        context = data['portifolio'][value]
+        coDesReplace('.list_projetos', context)
 
     }
 }
