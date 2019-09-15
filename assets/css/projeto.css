@@ -24,9 +24,11 @@
 	font-size:1.1rem;
 	color: #353333;
 	margin-left: 2rem;
-	flex-wrap: wrap;
-	justify-content: center;
-	max-width: 50rem
+	max-width: 50rem;
+	display: grid;
+	grid-gap: 1rem;
+	grid-template-columns: 1fr;
+	margin: 1rem;
 
 }
 
@@ -41,32 +43,23 @@
 }
 
 
-.subtitulo{
-	font-family: "quicksand", sans-serif;
-	font-size:1.1rem;
-	font-weight: bold;
-	color: #5589B5;
-	max-width: 50rem
+.table {
+	max-width: 50rem;
+	margin-top: 1rem;
 }
 
-.descricao {
-	margin-top: 1rem;
-	margin-left: 0.5rem;
+.row {
+	color: #081326;
 }
 
-.equipe {
-	margin-top: 1rem;
-	margin-left: 0.5rem;
+.row:nth-child(odd) {
+	background-color: #081326;
+	color: #F6F6F6;
+
 }
 
-.ferramentas {
-	margin-top: 1rem;
-	margin-left: 0.5rem;
-}
-
-.laboratorio {
-	margin-top: 1rem;
-	margin-left: 0.5rem;
+.cell {
+	padding: 1rem;
 }
 
 @media (max-width: 68rem) {
