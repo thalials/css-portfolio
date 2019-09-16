@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
         context = data['portifolio'][value]
         coDesReplace('title', context)
 
-        context = data
+        context = data['portifolio'][value]
         coDesReplace('.menu-list', context)
 
         context = data['portifolio'][value]
