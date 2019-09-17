@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
   let params = coDesExtract()
-  let value = params['key']
+  let value = params['id']
 
   let db = coDesConnect('https://grupo-7-66c34.firebaseio.com/')
 
@@ -13,7 +13,8 @@ document.addEventListener('DOMContentLoaded', function() {
     context = data
     coDesReplace('.menu-list', context)
 
-    
+    context = data['portfolio'][value]
+    coDesReplace('.projetos', context)
 
     context = data['portfolio'][value]
     coDesReplace('.tudo', context)
