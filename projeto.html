@@ -30,18 +30,16 @@
       </figure>
 
       <ul class= "menu-list">
-        <li class='main-menu-item'><a class='back' href="categoria.html">Prototipagem</a></li>
-        <li class='main-menu-item'><a class='back' href="categoria.html">Programação</a></li>
-        <li class='main-menu-item'><a class='back' href="categoria.html">Modelagem</a></li>
-        <li class='main-menu-item'><a class='back' href="categoria.html">Matemática</a></li>
-        <li class='main-menu-item'><a class='back' href="categoria.html">Eletrônica</a></li>
+        {{#each portfolio}}
+        <li class='main-menu-item'><a class='back' href="categoria.html?id={{@key}}">{{this.categoria}}</a></li>
+        {{/each}}
       </ul>
     </nav>
   </header>
  
 	<main class="projeto-main">
 		<h1 class="projeto-title">
-			<a class='title-link' href="projeto.html?key1={{@key2}}">{{this.titulo}}</a>
+			<a class='title-link' href="projeto.html?id={{@key2}}">{{this.titulo}}</a>
 		</h1>
 
 		<figure class="cover">
@@ -51,19 +49,19 @@
 			<div class="projeto-texto">
 	                <tr class="row">
 	                    <td class="cell">Descrição:</td>
-	                    <td class="cell"><a class="projeto-link" href="projeto.html?key1={{@key2}}">{{this.descricao}}</a> </td>
+	                    <td class="cell"><a class="projeto-link" href="projeto.html?id={{@key2}}">{{this.descricao}}</a> </td>
 	                </tr>
 	                <tr class="row">
 	                    <td class="cell">Equipe:</td>
-	                    <td class="cell"><a class="projeto-link" href="projeto.html?ke1={{@key2}}">{{this.equipe}}</a></td>
+	                    <td class="cell"><a class="projeto-link" href="projeto.html?id={{@key2}}">{{this.equipe}}</a></td>
 	                </tr>
 	                <tr class="row">
 	                    <td class="cell">Ferramentas:</td>
-	                    <td class="cell"><a class="projeto-link" href="projeto.html?key1={{@key2}}">{{this.ferramentas}}</a></td>
+	                    <td class="cell"><a class="projeto-link" href="projeto.html?id={{@key2}}">{{this.ferramentas}}</a></td>
 	                </tr>
 	                <tr class="row">
 	                    <td class="cell">Laboratório:</td>
-	                    <td class="cell"><a class="projeto-link" href="projeto.html?key1={{@key2}}">{{this.laboratorio}}</a>.</td>
+	                    <td class="cell"><a class="projeto-link" href="projeto.html?id={{@key2}}">{{this.laboratorio}}</a>.</td>
 	                </tr>
 	    </table>         
 				</div>
