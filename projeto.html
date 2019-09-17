@@ -14,35 +14,34 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 
-<body>
+<body class="body">
 	<header class="header">
-		<figure class = "logo">
-			<a href="index.html"><img class="logo-img" src="assets/img/logo.png" alt="logo"></a>
-		</figure>
+    <figure class = "logo">
+      <a href="index.html"><img class="logo-img" src="assets/img/logo.png" alt="logo"></a>
+    </figure>
 
-		<nav class="menu">
-			<h2 class="menu-title">
-				Projetos de Engenharia
-			</h2>
+    <nav class="menu">
+      <h2 class="menu-title">
+        Projetos de Engenharia
+      </h2>
 
-			<figure class="menu-figure">
-				<a href="#"><img class="menu-img" src="assets/img/menu.png" alt="Abrir menu"></a>
-			</figure>
+      <figure class="menu-figure">
+        <a href="#"><img class="menu-img" src="assets/img/menu.png" alt="Abrir menu"></a>
+      </figure>
 
-			<ul class= "menu-list">
-				<li class='main-menu-item'><a class='back' href="categoria.html">Prototipagem</a></li>
-				<li class='main-menu-item'><a class='back' href="categoria.html">Programação</a></li>
-				<li class='main-menu-item'><a class='back' href="categoria.html">Modelagem</a></li>
-				<li class='main-menu-item'><a class='back' href="categoria.html">Matemática</a></li>
-				<li class='main-menu-item'><a class='back' href="categoria.html">Eletrônica</a></li>
-			</ul>
-		</nav>
-	</header>
-
-	{{#each projetos}} 
+      <ul class= "menu-list">
+        <li class='main-menu-item'><a class='back' href="categoria.html">Prototipagem</a></li>
+        <li class='main-menu-item'><a class='back' href="categoria.html">Programação</a></li>
+        <li class='main-menu-item'><a class='back' href="categoria.html">Modelagem</a></li>
+        <li class='main-menu-item'><a class='back' href="categoria.html">Matemática</a></li>
+        <li class='main-menu-item'><a class='back' href="categoria.html">Eletrônica</a></li>
+      </ul>
+    </nav>
+  </header>
+ 
 	<main class="projeto-main">
 		<h1 class="projeto-title">
-			<a class='title-link' href="projeto.html?id={{@key}}">{{this.projeto}}</a>
+			<a class='title-link' href="projeto.html?key1={{@key2}}">{{this.titulo}}</a>
 		</h1>
 
 		<figure class="cover">
@@ -52,22 +51,21 @@
 			<div class="projeto-texto">
 	                <tr class="row">
 	                    <td class="cell">Descrição:</td>
-	                    <td class="cell">Desenvolveu-se uma estação metereológica que era capaz de medir a pressão, a altura, a temperatura, a umidade e a luminosidade através de sensores que foram inseridos inseridos, sendo eles, respectivamente, BMP180, sensor de altura, LM35, DHT22, LDR. As informações são exibidas em um Display de Cristal Líquido (LCD). </td>
+	                    <td class="cell"><a class="projeto-link" href="projeto.html?key1={{@key2}}">{{this.descricao}}</a> </td>
 	                </tr>
 	                <tr class="row">
 	                    <td class="cell">Equipe:</td>
-	                    <td class="cell">Luiz Felipe, Thalia, Isadora</td>
+	                    <td class="cell"><a class="projeto-link" href="projeto.html?ke1={{@key2}}">{{this.equipe}}</a></td>
 	                </tr>
 	                <tr class="row">
 	                    <td class="cell">Ferramentas:</td>
-	                    <td class="cell">Necessário conhecimentos de programação no Arduino, montagem de circuitos através do eagle e manuseio de sensores. A placa de circuito foi feita com a fresadeira, os sensores foram unidos a placa com o processo de soldagem.</td>
+	                    <td class="cell"><a class="projeto-link" href="projeto.html?key1={{@key2}}">{{this.ferramentas}}</a></td>
 	                </tr>
 	                <tr class="row">
 	                    <td class="cell">Laboratório:</td>
-	                    <td class="cell">FabLab e laboratório de instrumentação e medição.</td>
+	                    <td class="cell"><a class="projeto-link" href="projeto.html?key1={{@key2}}">{{this.laboratorio}}</a>.</td>
 	                </tr>
-	    </table>   
-	    {{/each}}         
+	    </table>         
 				</div>
 		</div>
 	</main>	
