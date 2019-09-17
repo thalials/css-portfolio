@@ -53,7 +53,7 @@
       {{#each projetos}}
           <li class="list_projetos">
             <img class="img" src="assets/img/{{this.mini-img}}" width="320" height="205" alt="{{this.mini-title}}">
-          <a class="txt" href="projeto.html?id={{@key}}">{{this.titulo}}</a>
+          <a class="txt" href="projeto.html?id={{@key}}&key={{@key}}">{{this.categoria}}, >{{this.titulo}}</a>
           </li>
       {{/each}}
     </ul>
