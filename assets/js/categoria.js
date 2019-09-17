@@ -13,10 +13,11 @@ document.addEventListener('DOMContentLoaded', function() {
     context = data
     coDesReplace('.menu-list', context)
 
-    context = data['portfolio'][value]
-    coDesReplace('.tudo', context)
+    //context = data['portfolio'][value]
+    //coDesReplace('.tudo', context)
 
     context = data['portfolio'][value]
+    context['id'] = value
     coDesReplace('.projetos', context)
   })
 })
