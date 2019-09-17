@@ -8,6 +8,7 @@
   background-color: #F6F6F6;
 }
 .categoria{
+  padding-top: 0.5rem;
   font-family: "roboto slab", serif;
   font-size: 2.4rem;
   background-color: #F6F6F6;
@@ -54,8 +55,11 @@
   color: #353333;
   padding-bottom: 0.5rem;
 }
+.projetos{
+  display: inline-grid;
+  align-items: flex-start;
+}
 .img{
-  display: flex;
   justify-items: start;
   border-style: solid;
   border-width: 1px;
@@ -67,8 +71,6 @@
   font-size:1rem;
   font-weight: bold;
   text-decoration: none;
-  display: flex;
-  align-self: center;
   background-color: #F6F6F6;
   color: #353333;
   padding-left: 0.5rem;
@@ -84,7 +86,14 @@
 
 
 @media (max-width: 68rem) {
+  .categoria {
+    padding-left: 0.5rem;
+  }
+  .list_projetos{
+    padding-left: 0.5rem;
+  }
   .txt {
+    padding-left: 0.5rem;
     padding-left: 0.3rem;
     padding: 0.3rem;
   }
@@ -98,11 +107,16 @@
 }
 
 @media (max-width: 40rem) {
+  .categoria {
+    padding-left: 0.5rem;
+  }
   .list_projetos{
+    padding-left: 0.5rem;
     display: flex;
     flex-direction: column;
   }
   .txt {
+    padding-left: 0.5rem;
     font-weight: bold;
   }
   .img{
@@ -113,3 +127,9 @@
     max-width: 100%;
   }
 }
+
+@media (min-width: 600rem) {
+  .tudo{
+    max-width: 500rem;
+  }
+  }
