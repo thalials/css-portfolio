@@ -63,6 +63,13 @@
   border-color: #081326;
   
 }
+
+.list_projetos{
+  display: flex;
+  align-items: center;
+}
+
+
 .txt{
   font-family: "quicksand", sans-serif;
   font-size:1rem;
