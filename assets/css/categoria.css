@@ -5,13 +5,11 @@
   margin: 0 auto;
   width: 100%;
   flex-direction: column;
-  background-color: #F6F6F6;
 }
 .categoria{
   padding-top: 0.5rem;
   font-family: "roboto slab", serif;
   font-size: 2.4rem;
-  background-color: #F6F6F6;
   font-size: 1.5rem;
   justify-items: center;
   display: inline-grid;

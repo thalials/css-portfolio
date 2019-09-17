@@ -2,17 +2,19 @@
 <html lang="pt-br">
 
 <head>
-  <title>Portifólio de {{full_categoria}}</title>
+  <title>{{categoria}}</title>
   <link href="assets/css/reset.css" rel="stylesheet">
   <link href="assets/css/base.css" rel="stylesheet">
   <link href="assets/css/categoria.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+  <script src="assets/js/codes.js"></script>
+  <script src="assets/js/categoria.js"></script>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 
-<body>
+<body class="body">
   <header class="header">
     <figure class = "logo">
       <a href="index.html"><img class="logo-img" src="assets/img/logo.png" alt="logo"></a>
@@ -28,12 +30,14 @@
       </figure>
 
       <ul class= "menu-list">
-        {{#each portifolio}}
-        <li class="menu-item"><a class="menu-link" href="secao.html?key={{@key}}">{{this.categoria}}</a></li>
+        {{#each portfolio}}
+        <li class="menu-item"><a class="menu-link" href="categoria.html?id={{@key}}">{{this.categoria}}</a></li>
         {{/each}}
       </ul>
     </nav>
   </header>
+
+  
 
   <main class="tudo">
     <h1 class="categoria" rel="stylesheet">
@@ -42,7 +46,7 @@
     <h3 class="chamada_categoria">
       Aqui você encontrará projetos de >{{this.categoria}}
     </h3>
-
+    {{/each}}
     <h3 class="projetos_categoria">
       Projetos:
     </h3>
@@ -50,11 +54,14 @@
     <ul class="projetos">
       {{#each projetos}}
       <li class="list_projetos">
-       <img class="img" src="assets/img/prototipo.jpeg" width="320" height="205" alt="Estação meteorológica">
-       <a class="txt" href="projeto.html">{{this.titulo}}</a>
-     </li>
-     {{/each}}
-   </ul>
- </main>
+        <figure>
+          <img class="img" src="assets/img/{{this.imagem}}" alt="{{this.categoria}}" >
+        </figure>
+        <a class="txt" href="projeto.html">
+        {{this.titulo}}</a>
+      </li>
+      {{/each}}
+    </ul>
+  </main>  
 </body>
 </html>
