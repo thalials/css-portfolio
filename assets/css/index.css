@@ -92,21 +92,27 @@ hr {
 }
 .show {
   display: flex;
+  padding-left: center;
 }
 
 .show li{
   display: flex;
   width: 10rem;
-
+  padding-right: 20px;
+  height: 50px;
+  justify-content: center
 }
 
 .show li p{
-  line-height: 2rem;
+  line-height: 1rem;
   border-left: 1px solid #000;
-  padding-left: 12px;
+  padding-left: 10px;
+  -webkit-text-emphasis-style: open;
+
 }
 
 .redes-sociais {
+  padding: 10px;
   display: flex;
   align-content: center;
 }

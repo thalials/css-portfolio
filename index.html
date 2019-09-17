@@ -8,6 +8,8 @@
   <link href="assets/css/reset.css" rel="stylesheet">
   <link href="assets/css/base.css" rel="stylesheet">
   <link href="assets/css/index.css" rel="stylesheet">
+  <script src="assets/js/codes.js"></script>
+  <script src="assets/js/index.js"></script>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
@@ -49,20 +51,24 @@
     </div>
 
     <ul class="category-list">
+      {{#each portfolio}}
       <li class="category-item">
         <figure class="category-cover">
-          <img class="category-image" src="assets/img/prototipo.jpeg" alt="Prototipagem">
+          <img class="category-image" src="assets/img/{{this.imagem}}" alt="{{this.categoria}}">
         </figure>
+
         <div class="category-description">
           <h2 class="category-title">
-            <a class='category-link' href="categoria.html">Prototipagem</a>
+            <a class='category-link' href="categoria.html?id={{@key}}">{{this.categoria}}</a>
           </h2>
           <p class = "category-body">
-            Nesta seção você encontrará todos os projetos de Prototipagem.
+            {{this.descricao}}
           </p>
         </div>
       </li>
+      {{/each}}
 
+      <!--
       <li class="category-item">
         <figure class="category-cover">
           <img class="category-image" src="assets/img/prog.jpeg" alt="programacao">
@@ -118,6 +124,8 @@
           </p>
         </div>
       </li>
+      -->
+
     </ul>
     <br/>
     <hr/>
@@ -127,24 +135,18 @@
           <figure class= "redes-sociais">
           <img class="insta" src="assets/img/insta.jpg" alt= "Instagram">
         </a>
+
         <p> Instagram </p>
       </li>
       <li>
         <a href="http://instagram.com/?hl=pt-br" target="blank">
           <figure class= "redes-sociais">
-          <img class="insta" src="assets/img/insta.jpg" alt= "Instagram">
+          <img class="insta" src="assets/img/wpp.png" alt= "Whatsapp">
         </a>
-        <p> Instagram </p>
-      </li>
-      <li>
-        <a href="http://instagram.com/?hl=pt-br" target="blank">
-          <figure class= "redes-sociais">
-          <img class="insta" src="assets/img/insta.jpg" alt= "Instagram">
-        </a>
-        <p> Instagram </p>
+        <p> (11) 00000-0000 </p>
       </li>
     </ul>
-    
+
   </main>
 </body>
 </html>
