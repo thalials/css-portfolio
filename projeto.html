@@ -8,6 +8,8 @@
 	<link href="assets/css/reset.css" rel="stylesheet">
 	<link href="assets/css/base.css" rel="stylesheet">
 	<link href="assets/css/projeto.css" rel="stylesheet">
+	<script src="assets/js/codes.js"></script>
+  	<script src="assets/js/projeto.js"></script>
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
@@ -37,13 +39,14 @@
 		</nav>
 	</header>
 
+	{{#each projetos}} 
 	<main class="projeto-main">
 		<h1 class="projeto-title">
-			Estação Meteorológica
+			<a class='title-link' href="projeto.html?id={{@key}}">{{this.projeto}}</a>
 		</h1>
 
 		<figure class="cover">
-			<img class="cover-image" src="assets/img/prototipo.jpeg" width="320" height="205" alt= "Estação Meteorológica">
+			<img class="cover-image" src="assets/img/{{this.imagem}}" width="320" height="205" alt= "Estação Meteorológica">
 		</figure>
 		<table class="table">
 			<div class="projeto-texto">
@@ -63,7 +66,8 @@
 	                    <td class="cell">Laboratório:</td>
 	                    <td class="cell">FabLab e laboratório de instrumentação e medição.</td>
 	                </tr>
-	    </table>           
+	    </table>   
+	    {{/each}}         
 				</div>
 		</div>
 	</main>	
