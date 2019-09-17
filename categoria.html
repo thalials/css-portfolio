@@ -31,37 +31,32 @@
 
       <ul class= "menu-list">
         {{#each portfolio}}
-        <li class="menu-item"><a class="menu-link" href="categoria.html?id={{@key}}">{{this.categoria}}</a></li>
+        <li class='main-menu-item'><a class='back' href="categoria.html?id={{@key}}">{{this.categoria}}</a></li>
         {{/each}}
       </ul>
     </nav>
   </header>
 
-  
-
   <main class="tudo">
-    <h1 class="categoria" rel="stylesheet">
+    <h1 class="categoria">
       {{this.categoria}}
     </h1>
     <h3 class="chamada_categoria">
-      Aqui você encontrará projetos de >{{this.categoria}}
+      Aqui você encontrará projetos de {{this.categoria}}
     </h3>
-    {{/each}}
+
     <h3 class="projetos_categoria">
       Projetos:
     </h3>
 
     <ul class="projetos">
       {{#each projetos}}
-      <li class="list_projetos">
-        <figure>
-          <img class="img" src="assets/img/{{this.imagem}}" alt="{{this.categoria}}" >
-        </figure>
-        <a class="txt" href="projeto.html">
-        {{this.titulo}}</a>
-      </li>
+          <li class="list_projetos">
+            <img class="img" src="assets/img/{{this.mini-img}}" width="320" height="205" alt="{{this.mini-title}}">
+          <a class="txt" href="projeto.html?id={{@key}}">{{this.titulo}}</a>
+          </li>
       {{/each}}
     </ul>
-  </main>  
+  </main>
 </body>
 </html>
