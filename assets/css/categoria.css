@@ -52,6 +52,7 @@
 	background-color: #F6F6F6;
 	color: #353333;
 	padding-bottom: 0.5rem;
+	padding: 15px;
 }
 .projetos{
 	display: inline-grid;
@@ -69,6 +70,7 @@
 .list_projetos{
 	display: flex;
 	align-items: center;
+	padding: 10px;
 }
 
 
@@ -94,6 +96,7 @@
 @media (max-width: 68rem) {
 	.chamada_categoria{
 		align-self: center;
+
 	}
 
 	.categoria {
@@ -124,13 +127,14 @@
 	.chamada_categoria{
 		align-self: center;
 		align-items: center;
+		padding: 15px
 	}
 
 	.categoria {
 		padding-left: 0.5rem;
 	}
 	.list_projetos{
-		padding-left: 0.5rem;
+		padding-left: 1rem;
 		display: flex;
 		flex-direction: column;
 	}
