@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
     	coDesReplace('.cover', context)
 
     	context = data['portfolio'][value1]['projetos'][value2]
-    	coDesReplace('.cell', context)
+    	coDesReplace('.table', context)
         
     })
 })
