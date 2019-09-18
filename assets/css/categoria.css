@@ -1,140 +1,152 @@
 /*categoria*/
 
 .tudo{
-  max-width: 80rem;
-  margin: 0 auto;
-  width: 100%;
-  flex-direction: column;
+	max-width: 80rem;
+	margin: 0 auto;
+	width: 100%;
+	flex-direction: column;
 }
 .categoria{
-  padding-top: 0.5rem;
-  font-family: "roboto slab", serif;
-  font-size: 2.4rem;
-  font-size: 1.5rem;
-  justify-items: center;
-  display: inline-grid;
-  grid-column-start: 2;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 3;
-  width: 100%;
-  height: 100%;
-  color: #314366;
-  border-top: none;
+	padding-top: 0.5rem;
+	font-family: "roboto slab", serif;
+	font-size: 2.4rem;
+	font-size: 1.5rem;
+	justify-items: center;
+	display: inline-grid;
+	grid-column-start: 2;
+	grid-column-end: 4;
+	grid-row-start: 1;
+	grid-row-end: 3;
+	width: 100%;
+	height: 100%;
+	color: #314366;
+	border-top: none;
 }
 
 .lis_projetos{
-  display: block;
+	display: block;
 }
 .chamada_categoria{
-  font-family: "quicksand", sans-serif;
-  font-size:1.2rem;
-  justify-items: center;
-  display: grid;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  grid-column-start: 2;
-  grid-column-end: 4;
-  grid-row-start: span-2;
-  grid-row-end: 3;
-  color: #353333;
+	font-family: "quicksand", sans-serif;
+	font-size:1.2rem;
+	justify-items: center;
+	display: grid;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	grid-column-start: 2;
+	grid-column-end: 4;
+	grid-row-start: span-2;
+	grid-row-end: 3;
+	color: #353333;
 }
 
 .projetos_categoria{
-  padding-left: 0.5rem;
-  font-family: "roboto slab", serif;
-  font-size: 1.3rem;
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 3;
-  grid-row-end: 4;
-  background-color: #F6F6F6;
-  color: #353333;
-  padding-bottom: 0.5rem;
+	padding-left: 0.5rem;
+	font-family: "roboto slab", serif;
+	font-size: 1.3rem;
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 3;
+	grid-row-end: 4;
+	background-color: #F6F6F6;
+	color: #353333;
+	padding-bottom: 0.5rem;
 }
 .projetos{
-  display: inline-grid;
-  align-items: flex-start;
-  padding-top: 0.5rem;
+	display: inline-grid;
+	align-items: flex-start;
+	padding-top: 0.5rem;
 }
 .img{
-  justify-items: start;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #081326;
-  
+	justify-items: start;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #081326;
+
 }
 
 .list_projetos{
-  display: flex;
-  align-items: center;
+	display: flex;
+	align-items: center;
 }
 
 
 .txt{
-  font-family: "quicksand", sans-serif;
-  font-size:1rem;
-  font-weight: bold;
-  text-decoration: none;
-  background-color: #F6F6F6;
-  color: #353333;
-  padding-left: 0.5rem;
-  padding: 0.5rem;
-  transition: background-color .25s, color .25s;
+	font-family: "quicksand", sans-serif;
+	font-size:1rem;
+	font-weight: bold;
+	text-decoration: none;
+	background-color: #F6F6F6;
+	color: #353333;
+	padding-left: 0.5rem;
+	padding: 0.5rem;
+	transition: background-color .25s, color .25s;
 }
 
 .txt:hover{
-  background-color: #5589b5;
-  color: #F6F6F6;
+	background-color: #5589b5;
+	color: #F6F6F6;
 }
 
 
 
 @media (max-width: 68rem) {
-  .categoria {
-    padding-left: 0.5rem;
-  }
-  .list_projetos{
-    padding-left: 0.5rem;
-  }
-  .txt {
-    padding-left: 0.5rem;
-    padding-left: 0.3rem;
-    padding: 0.3rem;
-  }
-  .img {
-    align-self: flex-start;
-  }
-  .tudo{
-    width: 100%;
-    background-color: #F6F6F6;
-  }
+	.chamada_categoria{
+		align-self: center;
+	}
+
+	.categoria {
+		padding-left: 0.5rem;
+	}
+	.list_projetos{
+		padding-left: 0.5rem;
+	}
+	.txt {
+		padding-left: 0.5rem;
+		padding-left: 0.3rem;
+		padding: 0.3rem;
+	}
+	.img {
+		align-self: flex-start;
+	}
+	.tudo{
+		width: 100%;
+		background-color: #F6F6F6;
+	}
 }
 
 @media (max-width: 40rem) {
-  .categoria {
-    padding-left: 0.5rem;
-  }
-  .list_projetos{
-    padding-left: 0.5rem;
-    display: flex;
-    flex-direction: column;
-  }
-  .txt {
-    padding-left: 0.5rem;
-    font-weight: bold;
-  }
-  .img{
-    max-width: 100%;
-  }
-  .tudo{
-    width: 100%;
-    max-width: 100%;
-  }
+	.tudo{
+		padding-left: 1rem;
+	}
+	.chamada_categoria{
+		align-self: center;
+		align-items: center;
+	}
+
+	.categoria {
+		padding-left: 0.5rem;
+	}
+	.list_projetos{
+		padding-left: 0.5rem;
+		display: flex;
+		flex-direction: column;
+	}
+	.txt {
+		padding-left: 0.5rem;
+		font-weight: bold;
+	}
+	.img{
+		max-width: 100%;
+	}
+	.tudo{
+		width: 100%;
+		max-width: 100%;
+	}
 }
 
 @media (min-width: 600rem) {
-  .tudo{
-    max-width: 500rem;
-  }
-  }
+	.tudo{
+		max-width: 500rem;
+	}
+}
