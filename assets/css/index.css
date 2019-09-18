@@ -88,8 +88,8 @@ hr {
   width: 3rem;
   height: 2.5rem;
   border-radius: 50%;
-
 }
+
 .show {
   display: flex;
   padding-left: center;
@@ -97,9 +97,10 @@ hr {
 
 .show li{
   display: flex;
-  width: 10rem;
+  width: 15rem;
   padding-right: 20px;
-  height: 50px;
+  font-size: 0.9rem;
+  height: 55px;
   justify-content: center
 }
 
@@ -108,7 +109,6 @@ hr {
   border-left: 1px solid #000;
   padding-left: 10px;
   -webkit-text-emphasis-style: open;
-
 }
 
 .redes-sociais {
@@ -116,6 +116,7 @@ hr {
   display: flex;
   align-content: center;
 }
+
 @media (max-width: 68rem) {
   .category-list {
     margin-top: 2rem;
@@ -135,6 +136,25 @@ hr {
   .category-list {
     grid-template-columns: 1fr;
   }
+  .show li{
+    display: flex;
+    width: 13rem;
+    padding-right: 10px;
+    font-size: 0.7rem;
+  }
+
+  .show li p{
+    line-height: 1rem;
+    border-left: 1px solid #000;
+    padding-left: 5px;
+    -webkit-text-emphasis-style: open;
+}
+  .insta {
+    width: 2.5rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+
 }
 
 
