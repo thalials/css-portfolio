@@ -55,6 +55,7 @@
 .projetos{
   display: inline-grid;
   align-items: flex-start;
+  padding-top: 0.5rem;
 }
 .img{
   justify-items: start;
