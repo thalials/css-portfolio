@@ -5,6 +5,14 @@ document.addEventListener('DOMContentLoaded', function() {
     context = data
     coDesReplace('.category-list', context)
     coDesReplace('.menu-list', context)
-
   })
 })
+
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
