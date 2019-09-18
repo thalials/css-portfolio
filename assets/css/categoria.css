@@ -25,6 +25,7 @@
 
 .lis_projetos{
 	display: block;
+	padding: 10px;
 }
 .chamada_categoria{
 	font-family: "quicksand", sans-serif;
