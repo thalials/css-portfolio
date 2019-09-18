@@ -3,7 +3,6 @@
 .tudo{
 	max-width: 80rem;
 	margin: 0 auto;
-	width: 100%;
 	flex-direction: column;
 }
 .categoria{
@@ -121,9 +120,6 @@
 }
 
 @media (max-width: 40rem) {
-	.tudo{
-		padding-left: 1rem;
-	}
 	.chamada_categoria{
 		align-self: center;
 		align-items: center;
