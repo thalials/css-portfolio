@@ -19,5 +19,11 @@ document.addEventListener('DOMContentLoaded', function() {
     context = data['portfolio'][value]
     context['id'] = value
     coDesReplace('.projetos', context)
+
+    context = data['portfolio'][value]
+    context['id'] = value
+    coDesReplace('.tudo', context)
+
+
   })
 })
